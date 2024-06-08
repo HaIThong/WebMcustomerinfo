@@ -1,18 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+
+import ThongBao from "./components/ThongBao"
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <ThongBao text="Đã thêm khách hàng mới"/>
+     
 
-        <h1>
-          Thong handsome boy
-        </h1>
-       
-      </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
