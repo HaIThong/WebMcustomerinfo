@@ -1,5 +1,8 @@
 import React from "react";
-
+import Input from "./input/input";
+import Text from "./input/text";
+import Button from "./input/button";
+import Select from "./input/select";
 const KhachHangIF = () => {
   return (
     <div style={{
@@ -8,9 +11,9 @@ const KhachHangIF = () => {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       width: '90vw',
-      height: '550px',
+      height: '590px',
       maxWidth: '400px',
-      backgroundColor: '#f8f9fa',
+      backgroundColor: '#f5f5dc',
       border: '1px solid #ccc',
       padding: '10px',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -33,21 +36,42 @@ const KhachHangIF = () => {
       <div style={{
         width: '100%',
         height: '550px',
-        backgroundColor: '#7fff00',
+        backgroundColor: '#fff8dc',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        gap: '10px',
+        gap: '5px',
         padding: '10px',
         boxSizing: 'border-box',
       }}>
         <div>
-        <input style={{ height:'20px', backgroundColor: '#fff', padding: '10px', border: '1px solid #ccc',margin:'10px' }}>
-          {/* Ô thông tin 1 */}
-        </input>
-        <input style={{ height:'20px',backgroundColor: '#fff', padding: '10px', border: '1px solid #ccc',margin:'10px' }}>
-          {/* Ô thông tin 2 */}
-        </input>
-
+        <Text text="Mã KH:"/>
+        <Input/>
+        <Text text="Đại diện"/>
+        <Input/>
+        <Text text="Tài khoản:"/>
+        <Input/>
+        <Text text="Bộ Phận quản:"/>
+        <Input/>
+        <Text text="Huyện:"/>
+        <Input/>
+        <Button colorScheme="warning">
+        Hủy
+      </Button>
+        </div>
+        <div>
+        <Text text="Tên đơn vị"/>
+        <Input/>
+        <Text text="Điện thoại"/>
+        <Input/>
+        <Text text="Phân loại đơn vị:"/>
+        <Input/>
+        <Text text="Tỉnh:"/>
+        <Select/>
+        <Text text="Xã:"/>
+        <Input/>
+        <Button colorScheme="primary">
+          Thêm
+        </Button>
         </div>
       </div>
     </div>

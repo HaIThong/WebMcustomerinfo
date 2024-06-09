@@ -1,14 +1,11 @@
 
-import ThongBao from "./components/ThongBao"
-
+import KhachHangIF from "./components/KhachHangIF"
 
 
 function App() {
   return (
     <div className="App">
-      <ThongBao text="Đã thêm khách hàng mới"/>
-     
-
+      <KhachHangIF/>
     </div>
   )
 }
