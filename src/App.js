@@ -1,11 +1,11 @@
 
-import KhachHangIF from "./components/KhachHangIF"
+import SanPhamIF from "./components/SanPhamIF"
 
 
 function App() {
   return (
     <div className="App">
-      <KhachHangIF/>
+      <SanPhamIF i4SP="Thêm sản phẩm"/>
     </div>
   )
 }

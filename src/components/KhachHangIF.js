@@ -3,7 +3,7 @@ import Input from "./input/input";
 import Text from "./input/text";
 import Button from "./input/button";
 import Select from "./input/select";
-const KhachHangIF = () => {
+const KhachHangIF = (props) => {
   return (
     <div style={{
       position: 'fixed',
@@ -30,7 +30,7 @@ const KhachHangIF = () => {
         alignItems: 'center',
         color: '#0149CD',
       }}>
-        <h2>Thêm khách hàng</h2>
+        <h2>{props.i4KH}</h2>
       </div>
 
       <div style={{
