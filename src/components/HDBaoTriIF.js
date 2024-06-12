@@ -2,7 +2,8 @@ import React from "react";
 import Input from "./input/input";
 import Text from "./input/text";
 import Button from "./input/button";
-const HDBaoTriIF = (props) => {
+import Select1 from "./input/Select1";
+const HDBaoTRiIF = (props) => {
   return (
     <div style={{
       position: 'fixed',
@@ -10,7 +11,7 @@ const HDBaoTriIF = (props) => {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       width: '90vw',
-      height: '400px',
+      height: '450px',
       maxWidth: '400px',
       backgroundColor: '#f5f5dc',
       border: '1px solid #ccc',
@@ -29,7 +30,7 @@ const HDBaoTriIF = (props) => {
         alignItems: 'center',
         color: '#0149CD',
       }}>
-        <h2>{props.i4SP}</h2>
+        <h2>{props.i4BT}</h2>
       </div>
 
       <div style={{
@@ -43,26 +44,30 @@ const HDBaoTriIF = (props) => {
         boxSizing: 'border-box',
       }}>
         <div>
-        <Text text="Mã SP:"/>
+        <Text text="Mã BH:"/>
         <Input/>
         <Text text="Ngày nhập:"/>
-        <Input/>
+        <Select1/>
+        <Text text="Bộ phận quản lý:"/>
+        <Select1/>
         <Button colorScheme="warning">
         Hủy
       </Button>
         </div>
         <div>
-        <Text text="Tên sản phẩm:"/>
+        <Text text="Cán bộ thực hiện:"/>
         <Input/>
-        <Text text="Bộ phận quản lý"/>
-        <Input/>
+        <Text text="Sản Phẩm"/>
+        <Select1/>
+        <div className="sds" style={{marginTop:"84px"}}>
         <Button colorScheme="primary">
           Thêm
         </Button>
+        </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default HDBaoTriIF;
+export default HDBaoTRiIF;

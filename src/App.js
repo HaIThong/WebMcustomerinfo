@@ -1,11 +1,11 @@
 
-import SanPhamIF from "./components/SanPhamIF"
-
+import HDBaoTRiIF from "./components/HDBaoTriIF"
+import HopDongIF from "./components/HopDongIF"
 
 function App() {
   return (
     <div className="App">
-      <SanPhamIF i4SP="Thêm sản phẩm"/>
+      <HDBaoTRiIF i4BT="Bảo trì hợp đồng"/>
     </div>
   )
 }
