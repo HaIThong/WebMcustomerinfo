@@ -3,6 +3,7 @@ import Input from "./input/input";
 import Text from "./input/text";
 import Button from "./input/button";
 import Select from "./input/select";
+import Select1 from "./input/Select1";
 const KhachHangIF = (props) => {
   return (
     <div style={{
@@ -47,13 +48,13 @@ const KhachHangIF = (props) => {
         <Text text="Mã KH:"/>
         <Input/>
         <Text text="Đại diện"/>
-        <Input/>
+        <Select1/>
         <Text text="Tài khoản:"/>
         <Input/>
         <Text text="Bộ Phận quản:"/>
-        <Input/>
+        <Select1/>
         <Text text="Huyện:"/>
-        <Input/>
+        <Select1/>
         <Button colorScheme="warning">
         Hủy
       </Button>

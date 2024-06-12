@@ -1,11 +1,10 @@
 
-import HDBaoTRiIF from "./components/HDBaoTriIF"
-import HopDongIF from "./components/HopDongIF"
+import KhachHangIF from "./components/KhachHangIF"
 
 function App() {
   return (
     <div className="App">
-      <HDBaoTRiIF i4BT="Bảo trì hợp đồng"/>
+      <KhachHangIF/>
     </div>
   )
 }
