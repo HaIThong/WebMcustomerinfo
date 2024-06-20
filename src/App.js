@@ -1,4 +1,4 @@
-import Khachhang from "./components/Khachhang";
+// import Khachhang from "./components/Khachhang";
 import Sidebar from "./components/Sidebar";
 import MainPanel from "./components/MainPanel";
 import "./App.css";

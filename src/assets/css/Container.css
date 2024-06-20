@@ -1,6 +1,17 @@
 .container {
     padding: 10px;
     flex: 1;
+    transition: filter 0.3s ease;
+    /* Ensure transition for smooth effect */
+}
+
+.btn-edit{
+    font-size: 21px;
+    color: #0149CD;
+}
+
+ion-icon{
+    font-size: 20px;
 }
 
 .styled-table {

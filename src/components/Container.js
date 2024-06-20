@@ -1,5 +1,10 @@
 import React from 'react';
 import '../assets/css/Container.css';
+import '../assets/css/Popup.css';
+
+import Popup from 'reactjs-popup';
+import PopupContent from './PopupContent'; 
+import PopupDelete from './PopupDelete';
 
 const Container = () => {
   return (
@@ -8,12 +13,15 @@ const Container = () => {
         <div className="page-header">
           <h3>Quản lý khách hàng</h3>
           <div className="page-header-button">
+            <Popup trigger = {
             <button className="button-header">
               <div className="button-add-export">
                 <span className="button-icon"><ion-icon name="person-add"></ion-icon></span>
                 <span className="button-text">Thêm khách hàng</span>
               </div>
-            </button>
+            </button>} modal nested>
+              {close => <PopupContent onClose={close} />}
+              </Popup>
             <button className="button-header">
               <div className="button-add-export">
                 <span className="button-icon"><ion-icon name="download-sharp"></ion-icon></span>
@@ -47,7 +55,11 @@ const Container = () => {
                 <td>Giáo dục</td>
                 <td>Tỉnh</td>
                 <td>Tân Đức, Đầm Dơi, Cà Mau</td>
-                <td></td>
+                <Popup trigger = {<td>
+                  <ion-icon name="create"></ion-icon></td>
+                }modal nested>
+              {close => <PopupDelete onClose={close} />}
+              </Popup>
               </tr>
               {/* More rows... */}
             </tbody>
