@@ -1,10 +1,13 @@
 import React from 'react';
 import '../assets/css/Container.css';
+<<<<<<< HEAD
 import '../assets/css/Popup.css';
 
 import Popup from 'reactjs-popup';
 import PopupContent from './PopupContent'; 
 import PopupDelete from './PopupDelete';
+=======
+>>>>>>> 3bdf8fb284c955b91f315ac0943fabae831bc0d7
 
 const Container = () => {
   return (
@@ -13,15 +16,22 @@ const Container = () => {
         <div className="page-header">
           <h3>Quản lý khách hàng</h3>
           <div className="page-header-button">
+<<<<<<< HEAD
             <Popup trigger = {
+=======
+>>>>>>> 3bdf8fb284c955b91f315ac0943fabae831bc0d7
             <button className="button-header">
               <div className="button-add-export">
                 <span className="button-icon"><ion-icon name="person-add"></ion-icon></span>
                 <span className="button-text">Thêm khách hàng</span>
               </div>
+<<<<<<< HEAD
             </button>} modal nested>
               {close => <PopupContent onClose={close} />}
               </Popup>
+=======
+            </button>
+>>>>>>> 3bdf8fb284c955b91f315ac0943fabae831bc0d7
             <button className="button-header">
               <div className="button-add-export">
                 <span className="button-icon"><ion-icon name="download-sharp"></ion-icon></span>
@@ -55,11 +65,15 @@ const Container = () => {
                 <td>Giáo dục</td>
                 <td>Tỉnh</td>
                 <td>Tân Đức, Đầm Dơi, Cà Mau</td>
+<<<<<<< HEAD
                 <Popup trigger = {<td>
                   <ion-icon name="create"></ion-icon></td>
                 }modal nested>
               {close => <PopupDelete onClose={close} />}
               </Popup>
+=======
+                <td></td>
+>>>>>>> 3bdf8fb284c955b91f315ac0943fabae831bc0d7
               </tr>
               {/* More rows... */}
             </tbody>

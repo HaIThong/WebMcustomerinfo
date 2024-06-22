@@ -38,6 +38,7 @@
     padding: 10px;
     box-sizing: border-box;
   } */
+<<<<<<< HEAD
 
 * {
   box-sizing: border-box;
@@ -54,3 +55,21 @@ body {
   min-height: 100vh;
   position: relative;
 }
+=======
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    body {
+      font-family: Arial, sans-serif;
+    }
+  
+    .wrapper {
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+>>>>>>> 3bdf8fb284c955b91f315ac0943fabae831bc0d7
