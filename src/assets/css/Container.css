@@ -1,7 +1,6 @@
 .container {
     padding: 10px;
     flex: 1;
-<<<<<<< HEAD
     transition: filter 0.3s ease;
     /* Ensure transition for smooth effect */
 }
@@ -13,8 +12,6 @@
 
 ion-icon{
     font-size: 20px;
-=======
->>>>>>> 3bdf8fb284c955b91f315ac0943fabae831bc0d7
 }
 
 .styled-table {
